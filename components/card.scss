@@ -1,0 +1,96 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    .offer__recommended,
+    .offer__others {
+        display: flex;
+        flex-direction: column;
+        background-color: #E8EAEF;
+        margin-bottom: 14px;
+        padding: 14px;
+        .offer__title,
+        .offer__title--other {
+            font-size: 14px;
+            padding-bottom: 14px;
+            font-weight: 600;
+        }
+        .card,
+        .card--border {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 14px 0;
+            .card__left {
+                display: flex;
+                align-items: center;
+                ion-icon {
+                    font-size: 60px;
+                    margin-right: 7px;
+                }
+    @media screen and(max-width: 480px){
+            margin-bottom: 14px;
+        }
+            }
+            .card__right {
+                .card__button {
+                    padding: 7px 14px;
+                    background-color: #626475;
+                    border: none;
+                    color: #fff;
+        @media screen and(max-width: 480px){
+            float: right;
+        }
+                }
+                input {
+                   color: #fff;
+                }
+    @media screen and(max-width: 480px){
+            width: 100%;
+        }
+            }
+    @media screen and(max-width: 480px){
+            flex-direction: column;
+            align-items: center;
+        }
+            .close {
+                display: none;
+            }
+        }
+        .card--border {
+            border-top: 1px solid grey;
+        }
+        .card__details {
+            display: flex;
+            flex-direction: row;
+            .card__sale,
+            .card__bonus{
+                margin-left: 14px;
+                .details__text {
+                    padding: 14px 0;
+                }
+        @media screen and(max-width: 480px){
+            margin-left: 0;
+        }
+            }
+            .card__features {
+                .details__text {
+                    padding: 14px 0;
+                }
+                .details__list {
+                    .list__item:before {
+                        content:"- ";
+                    }
+                }
+            }
+            @media screen and(max-width: 480px){
+            flex-direction: column;
+        }
+            .close {
+                display: none;
+            }
+        }
+        .close {
+            display: none;
+        }
+    }
+}
