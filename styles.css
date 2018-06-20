@@ -77,6 +77,8 @@ header {
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease; }
+    header .nav .nav__item:focus {
+      border-bottom: 2px solid grey; }
 
 .offer {
   display: -webkit-box;
@@ -105,6 +107,11 @@ header {
       font-size: 14px;
       padding-bottom: 14px;
       font-weight: 600; }
+      .offer .offer__recommended .offer__title ion-icon,
+      .offer .offer__recommended .offer__title--other ion-icon,
+      .offer .offer__others .offer__title ion-icon,
+      .offer .offer__others .offer__title--other ion-icon {
+        font-size: 18px; }
     .offer .offer__recommended .card,
     .offer .offer__recommended .card--border,
     .offer .offer__others .card,

@@ -34,6 +34,9 @@ header {
                 border-bottom: 2px solid grey;
                 transition: 0.3s ease;
             }
+            &:focus {
+                border-bottom: 2px solid grey;
+            }
         }
 
     }
